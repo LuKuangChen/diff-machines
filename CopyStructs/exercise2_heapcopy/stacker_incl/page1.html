@@ -783,14 +783,14 @@
                 display: inline-flex;
                 white-space: pre-wrap;
                 color: black;
-                background-color: #FF9999;
+                background-color: #ffcbcb;
             }
     
             code.green {
                 display: inline-flex;
                 white-space: pre-wrap;
                 color: black;
-                background-color: greenyellow;
+                background-color: #d6ffcb;
             }
     
             hr {
@@ -962,7 +962,7 @@
             /* For stripes */
             .striped-box {
               position: relative;
-              padding: 1px;
+              padding: 0.5px;
               border: 5px solid transparent; /* Transparent border for spacing */
               width: max-content;
   
@@ -972,9 +972,9 @@
               content: "";
               position: absolute;
               border-radius: 1ex;
-              top: -5px;
+              top: -1px;
               right: -5px;
-              bottom: -5px;
+              bottom: -1px;
               left: -5px;
               background: repeating-linear-gradient(
                   45deg,
@@ -1025,13 +1025,15 @@
             
             <div aria-label="the code editor, press Esc then Tab to escape!"><div class="cm-theme-light"><div class="cm-editor ͼ1 ͼ2 ͼ4 ͼ34 ͼ15"><div aria-live="polite" style="position: fixed; top: -10000px;"></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters" aria-hidden="true" style="min-height: 98.9766px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">9</div><div class="cm-gutterElement" style="height: 18.1953px; margin-top: 4px;">1</div><div class="cm-gutterElement" style="height: 18.1953px;">2</div><div class="cm-gutterElement" style="height: 18.1953px;">3</div><div class="cm-gutterElement" style="height: 18.1953px;">4</div><div class="cm-gutterElement cm-activeLineGutter" style="height: 18.1953px;">5</div></div><div class="cm-gutter cm-foldGutter"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;"><span title="Unfold line">›</span></div><div class="cm-gutterElement" style="height: 18.1953px; margin-top: 22.1953px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement cm-activeLineGutter" style="height: 18.1953px; margin-top: 36.3906px;"></div></div></div><div spellcheck="false" autocorrect="off" autocapitalize="off" translate="no" contenteditable="true" class="cm-content" role="textbox" aria-multiline="true" aria-autocomplete="list" style="tab-size: 4;"><div class="cm-line">(<span class="ͼb">defvar</span> x (mvec 71 86))</div><div class="cm-line">(<span class="ͼb">deffun</span> (f y)</div><div class="cm-line">  (vec-set! y 0 34))</div><div class="cm-line">(f x)</div><div class="cm-activeLine cm-line">x</div></div><div class="cm-layer cm-layer-above cm-cursorLayer" aria-hidden="true" style="z-index: 150; animation-duration: 1200ms; animation-name: cm-blink2;"><div class="cm-cursor cm-cursor-primary" style="left: 44.6484px; top: 78.2812px; height: 15px;"></div></div><div class="cm-layer cm-selectionLayer" aria-hidden="true" style="z-index: -2;"></div></div></div></div></div></section><section id="stacker"><menu aria-label="toolbar" id="nav-trace"><li><button disabled=""><span aria-hidden="true">⏵ </span>Run</button></li><li><button disabled=""><span aria-hidden="true">⏮ </span>Previous</button></li><li><button onclick="loadNextPage()"><span aria-hidden="true">⏭ </span>Next</button></li><li><button onclick="loadHome()"><span aria-hidden="true">🏠 </span>Home</button></li></menu>
     <h1 class="centered-title-red">Misstacker</h1>
-    <article aria-label="the current stacker configuration" id="stacker-configuration"><section id="stack-and-now"><h1>Stack &amp; Program Counter</h1><p>(No stack frames)</p><hr><p class="now box calling">Calling <code class="blank">(@604 x)</code><br>in context <code class="blank">❓
-x</code><br>in environment <code class="blank">@top-level</code></p></section><section id="environments"><h1>Environments</h1><ol aria-label="a list of all environments" class="box-list"><li class="env-frame box"><span><code class="blank">@top-level</code><br>binds <span class="binds"><span class="bind"><code class="blank">x</code><span aria-hidden="true"> ↦ </span><span class="sr-only">to</span><code class="blank">@629</code></span><span class="bind"><code class="blank">f</code><span aria-hidden="true"> ↦ </span><span class="sr-only">to</span><code class="blank">@604</code></span></span><br>extending <code class="blank">@primordial-env</code></span></li></ol></section><section id="heap"><h1>Heap-allocated Values</h1><ol aria-label="a list of all heap-allocated values" class="box-list"><li class="vec box"><code class="blank">@629</code><br>vec<span> <code class="blank">71</code></span><span> <code class="blank">86</code></span></li><li class="fun box"><code class="blank">@604</code>, a function<br><details><summary>at line 2<small>:1</small> to 3<small>:21</small></summary><code class="blank">(lambda (y)
+    <article aria-label="the current stacker configuration" id="stacker-configuration"><section id="stack-and-now"><h1>Stack &amp; Program Counter</h1><p>(No stack frames)</p><hr>
+        <div class="striped-box"><p class="now box calling">Calling <code class="red">(@604 x)</code><br>in context <code class="blank">❓
+x</code><br>in environment <code class="blank">@top-level</code></p></div></section><section id="environments"><h1>Environments</h1><ol aria-label="a list of all environments" class="box-list"><li class="env-frame box"><span><code class="blank">@top-level</code><br>binds <span class="binds"><span class="bind"><code class="blank">x</code><span aria-hidden="true"> ↦ </span><span class="sr-only">to</span><code class="blank">@629</code></span><span class="bind"><code class="blank">f</code><span aria-hidden="true"> ↦ </span><span class="sr-only">to</span><code class="blank">@604</code></span></span><br>extending <code class="blank">@primordial-env</code></span></li></ol></section><section id="heap"><h1>Heap-allocated Values</h1><ol aria-label="a list of all heap-allocated values" class="box-list"><li class="vec box"><code class="blank">@629</code><br>vec<span> <code class="blank">71</code></span><span> <code class="blank">86</code></span></li><li class="fun box"><code class="blank">@604</code>, a function<br><details><summary>at line 2<small>:1</small> to 3<small>:21</small></summary><code class="blank">(lambda (y)
     (vec-set! y 0 34))</code><br></details><span>with environment <code class="blank">@top-level</code></span></li></ol></section></article>
     <hr> 
     <h1 class="centered-title-green">Stacker</h1>
-    <article aria-label="the current stacker configuration" id="stacker-configuration"><section id="stack-and-now"><h1>Stack &amp; Program Counter</h1><p>(No stack frames)</p><hr><p class="now box calling">Calling <code class="blank">(@604 @629)</code><br>in context <code class="blank">❓
-x</code><br>in environment <code class="blank">@top-level</code></p></section><section id="environments"><h1>Environments</h1><ol aria-label="a list of all environments" class="box-list"><li class="env-frame box"><span><code class="blank">@top-level</code><br>binds <span class="binds"><span class="bind"><code class="blank">x</code><span aria-hidden="true"> ↦ </span><span class="sr-only">to</span><code class="blank">@629</code></span><span class="bind"><code class="blank">f</code><span aria-hidden="true"> ↦ </span><span class="sr-only">to</span><code class="blank">@604</code></span></span><br>extending <code class="blank">@primordial-env</code></span></li></ol></section><section id="heap"><h1>Heap-allocated Values</h1><ol aria-label="a list of all heap-allocated values" class="box-list"><li class="vec box"><code class="blank">@629</code><br>vec<span> <code class="blank">71</code></span><span> <code class="blank">86</code></span></li><li class="fun box"><code class="blank">@604</code>, a function<br><details><summary>at line 2<small>:1</small> to 3<small>:21</small></summary><code class="blank">(lambda (y)
+    <article aria-label="the current stacker configuration" id="stacker-configuration"><section id="stack-and-now"><h1>Stack &amp; Program Counter</h1><p>(No stack frames)</p><hr>
+        <div class="striped-box"><p class="now box calling">Calling <code class="green">(@604 @629)</code><br>in context <code class="blank">❓
+x</code><br>in environment <code class="blank">@top-level</code></p></div></section><section id="environments"><h1>Environments</h1><ol aria-label="a list of all environments" class="box-list"><li class="env-frame box"><span><code class="blank">@top-level</code><br>binds <span class="binds"><span class="bind"><code class="blank">x</code><span aria-hidden="true"> ↦ </span><span class="sr-only">to</span><code class="blank">@629</code></span><span class="bind"><code class="blank">f</code><span aria-hidden="true"> ↦ </span><span class="sr-only">to</span><code class="blank">@604</code></span></span><br>extending <code class="blank">@primordial-env</code></span></li></ol></section><section id="heap"><h1>Heap-allocated Values</h1><ol aria-label="a list of all heap-allocated values" class="box-list"><li class="vec box"><code class="blank">@629</code><br>vec<span> <code class="blank">71</code></span><span> <code class="blank">86</code></span></li><li class="fun box"><code class="blank">@604</code>, a function<br><details><summary>at line 2<small>:1</small> to 3<small>:21</small></summary><code class="blank">(lambda (y)
     (vec-set! y 0 34))</code><br></details><span>with environment <code class="blank">@top-level</code></span></li></ol></section></article></section></main></div>
                 <dialog id="pop-up-for-sharing">
                     <textarea id="sharable-url" cols="50" rows="5"></textarea>
