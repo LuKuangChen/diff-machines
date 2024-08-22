@@ -235,9 +235,6 @@
                                                             height: 100%;
                                                             padding: 1ex;
                                                             box-sizing: border-box;
-                                                            position: -webkit-sticky; 
-                                                            position: sticky; 
-                                                            top: 0;
                                                         }
                                                         
                                                         section#program-source>div {
@@ -487,41 +484,41 @@
                                                       <body>
                                                           <div id="root">
                       <menu aria-label="toolbar" id="nav-trace" style="display: flex; align-items: center; justify-content: center; position: sticky; top: 0; margin: 0 auto; background-color: white; padding: 10px; box-sizing: border-box; width: 100%; z-index: 1000;">
-                
-                <li><button onclick="loadNextPage()" style="font-size: 16px; padding: 8px 16px;"><span aria-hidden="true">⏵ </span>Run</button></li>
-            </menu>
-              
-                      <main id="first-main"><section id="program-source" style="width: calc(-0.5ex + 200px); position:sticky;"><div aria-label="the code editor, press Esc then Tab to escape!" style="font-size: medium;"><div class="cm-theme-light"><div class="cm-editor ͼ1 ͼ2 ͼ4 ͼaq ͼ15 ͼ16"><div class="cm-announced" aria-live="polite"></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters" aria-hidden="true" style="min-height: 80.7841px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">9</div><div class="cm-gutterElement cm-activeLineGutter" style="height: 18.196px; margin-top: 4px;">1</div><div class="cm-gutterElement" style="height: 18.196px;">2</div><div class="cm-gutterElement" style="height: 18.196px;">3</div><div class="cm-gutterElement" style="height: 18.196px;">4</div></div><div class="cm-gutter cm-foldGutter"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;"><span title="Unfold line">›</span></div><div class="cm-gutterElement cm-activeLineGutter" style="height: 18.196px; margin-top: 4px;"></div></div></div><div spellcheck="false" autocorrect="off" autocapitalize="off" translate="no" contenteditable="true" style="tab-size: 4;" class="cm-content" role="textbox" aria-multiline="true" aria-readonly="true"><div class="cm-activeLine cm-line"><span class="ͼb">let</span> x = y + 1</div><div class="cm-line"><span class="ͼb">let</span> y = 2</div><div class="cm-line">print(x)</div><div class="cm-line">print(y)</div></div><div class="cm-layer cm-layer-above cm-cursorLayer" aria-hidden="true" style="z-index: 150; animation-duration: 1200ms;"><div class="cm-cursor cm-cursor-primary" style="left: 36.7187px; top: 5.36221px; height: 15.4545px;"></div></div><div class="cm-layer cm-selectionLayer" aria-hidden="true" style="z-index: -2;"></div></div></div></div></div></section>
-                                              <div id="split"></div><section id="stacker">
-                    <div id="banner" style="display: flex; justify-content: center; align-items: center; background-color: rgb(153, 250, 153); color: black; padding: 10px; font-size: 24px; z-index: 9999; width: 100%; box-sizing: border-box;">
-                    <div style="display: flex; align-items: center;">
-                        <span style="margin-right: 20px;">Stacker</span>
-                        
-                    </div>
-                </div>
-                <section id="stacker">
-                  
-              <p>To start tracing both, click <button onclick="loadNextPage()"><span aria-hidden="true">⏵ </span>Run</button>.</p></section></section></main><main id="second-main"><section id="program-source" style="width: calc(-0.5ex + 200px);"></section>
-                                          <div id="split"></div><section id="stacker" style="background-color: #faa79a"><div id="banner" style="display: flex; justify-content: center; align-items: center; background-color: rgb(253, 73, 73); color: white; padding: 10px; font-size: 24px; z-index: 9999; width: 100%; box-sizing: border-box;">
-                    <div style="display: flex; align-items: center;">
-                        <span style="margin-right: 20px;">Misstacker</span>
-                        
-                    </div>
-                </div><section id="stacker">
-                  
-              <p>To start tracing both, click <button onclick="loadNextPage()"><span aria-hidden="true">⏵ </span>Run</button>.</p></section></section></main></div>
+            
+            <li><button onclick="loadNextPage()" style="font-size: 16px; padding: 8px 16px;"><span aria-hidden="true">⏵ </span>Run</button></li>
+        </menu>
+          
+          
+                      <div id="banner-1" style="display: flex; justify-content: center; align-items: center; background-color: rgb(153, 250, 153); color: black; padding: 10px; font-size: 24px; z-index: 999; width: 100%; box-sizing: border-box; position: sticky; top: 60px;">
+            <div style="display: flex; align-items: center;">
+                <span style="margin-right: 20px;">Stacker with <span style="text-decoration: underline; font-weight: bold;">Original</span> Program</span>
+            </div>
+        </div><main id="first-main"><section id="program-source" style="width: calc(-0.5ex + 240px);">
+                      <div aria-label="the code editor, press Esc then Tab to escape!" style="font-size: medium;"><div class="cm-theme-light"><div class="cm-editor ͼ1 ͼ2 ͼ4 ͼau ͼ15 ͼ16"><div class="cm-announced" aria-live="polite"></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters" aria-hidden="true" style="min-height: 208.156px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">99</div><div class="cm-gutterElement" style="height: 18.196px; margin-top: 4px;">1</div><div class="cm-gutterElement" style="height: 18.196px;">2</div><div class="cm-gutterElement" style="height: 18.196px;">3</div><div class="cm-gutterElement" style="height: 18.196px;">4</div><div class="cm-gutterElement" style="height: 18.196px;">5</div><div class="cm-gutterElement" style="height: 18.196px;">6</div><div class="cm-gutterElement" style="height: 18.196px;">7</div><div class="cm-gutterElement" style="height: 18.196px;">8</div><div class="cm-gutterElement" style="height: 18.196px;">9</div><div class="cm-gutterElement" style="height: 18.196px;">10</div><div class="cm-gutterElement cm-activeLineGutter" style="height: 18.196px;">11</div></div><div class="cm-gutter cm-foldGutter"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;"><span title="Unfold line">›</span></div><div class="cm-gutterElement cm-activeLineGutter" style="height: 18.196px; margin-top: 185.96px;"></div></div></div><div spellcheck="false" autocorrect="off" autocapitalize="off" translate="no" contenteditable="true" style="tab-size: 4;" class="cm-content" role="textbox" aria-multiline="true" aria-readonly="true" aria-autocomplete="list"><div class="cm-line"><span class="ͼb">let</span> x = 12</div><div class="cm-line"><span class="ͼb">fun</span> f():</div><div class="cm-line">  <span class="ͼb">return</span> x</div><div class="cm-line"><span class="ͼb">end</span></div><div class="cm-line"><span class="ͼb">fun</span> g():</div><div class="cm-line" style="background-color:rgb(153, 250, 153)">  x = 0</div><div class="cm-line">  <span class="ͼb">return</span> f()</div><div class="cm-line"><span class="ͼb">end</span></div><div class="cm-line">print(g())</div><div class="cm-line">x = 1</div><div class="cm-activeLine cm-line">print<span class="cm-matchingBracket">(</span>f()<span class="cm-matchingBracket">)</span></div></div><div class="cm-layer cm-layer-above cm-cursorLayer" aria-hidden="true" style="z-index: 150; animation-duration: 1200ms; animation-name: cm-blink;"><div class="cm-cursor cm-cursor-primary" style="left: 118.636px; top: 187.322px; height: 15.4546px;"></div></div><div class="cm-layer cm-selectionLayer" aria-hidden="true" style="z-index: -2;"></div></div></div></div></div></section>
+                                              <div id="split"></div><section id="stacker"><p>To start tracing both, click <button onclick="loadNextPage()"><span aria-hidden="true">⏵ </span>Run</button>.</p></section></main><div id="banner-2" style="display: flex; justify-content: center; align-items: center; background-color: rgb(145, 144, 144); color: white; padding: 10px; font-size: 24px; z-index: 999; width: 100%; box-sizing: border-box; position: sticky; top: 105px;">
+            <div style="display: flex; align-items: center;">
+                <span style="margin-right: 20px;">Stacker with <span style="text-decoration: underline; font-weight: bold;">Modified</span> Program</span>
+            </div>
+        </div>
+        
+        <main id="second-main" style="min-height: calc(-246px + 100vh);"><section id="program-source" style="width: calc(-0.5ex + 240px);"><div aria-label="the code editor, press Esc then Tab to escape!" style="font-size: medium;"><div class="cm-theme-light"><div class="cm-editor ͼ1 ͼ2 ͼ4 ͼ23 ͼ15 ͼ16"><div class="cm-announced" aria-live="polite"></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters" aria-hidden="true" style="min-height: 208.156px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">99</div><div class="cm-gutterElement cm-activeLineGutter" style="height: 18.196px; margin-top: 4px;">1</div><div class="cm-gutterElement" style="height: 18.196px;">2</div><div class="cm-gutterElement" style="height: 18.196px;">3</div><div class="cm-gutterElement" style="height: 18.196px;">4</div><div class="cm-gutterElement" style="height: 18.196px;">5</div><div class="cm-gutterElement" style="height: 18.196px;">6</div><div class="cm-gutterElement" style="height: 18.196px;">7</div><div class="cm-gutterElement" style="height: 18.196px;">8</div><div class="cm-gutterElement" style="height: 18.196px;">9</div><div class="cm-gutterElement" style="height: 18.196px;">10</div><div class="cm-gutterElement" style="height: 18.196px;">11</div></div><div class="cm-gutter cm-foldGutter"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;"><span title="Unfold line">›</span></div><div class="cm-gutterElement cm-activeLineGutter" style="height: 18.196px; margin-top: 4px;"></div></div></div><div spellcheck="false" autocorrect="off" autocapitalize="off" translate="no" contenteditable="true" style="tab-size: 4;" class="cm-content" role="textbox" aria-multiline="true" aria-readonly="true"><div class="cm-activeLine cm-line"><span class="ͼb">let</span> x = 12</div><div class="cm-line"><span class="ͼb">fun</span> f():</div><div class="cm-line">  <span class="ͼb">return</span> x</div><div class="cm-line"><span class="ͼb">end</span></div><div class="cm-line"><span class="ͼb">fun</span> g():</div><div class="cm-line" style="background-color:#faa79a">  <span class="ͼb">let</span> x = 0</div><div class="cm-line">  <span class="ͼb">return</span> f()</div><div class="cm-line"><span class="ͼb">end</span></div><div class="cm-line">print(g())</div><div class="cm-line">x = 1</div><div class="cm-line">print(f())</div></div><div class="cm-layer cm-layer-above cm-cursorLayer" aria-hidden="true" style="z-index: 150; animation-duration: 1200ms;"><div class="cm-cursor cm-cursor-primary" style="left: 40.3693px; top: 5.36221px; height: 15.4545px;"></div></div><div class="cm-layer cm-selectionLayer" aria-hidden="true" style="z-index: -2;"></div></div></div></div></div></section>
+                                          <div id="split"></div><section id="stacker"><p>To start tracing both, click <button onclick="loadNextPage()"><span aria-hidden="true">⏵ </span>Run</button>.</p></section></main></div>
                                                           <dialog id="pop-up-for-sharing">
                                                               <textarea id="sharable-url" cols="50" rows="5"></textarea>
                                                               <button onclick="closeDialog()">Close</button>
                                                           </dialog>
                                                           <script>
-              
-                                                            //   document.addEventListener("DOMContentLoaded", function() {
-                                                            //           var firstMainHeight = document.getElementById("first-main").offsetHeight;
-                                                            //           var secondMain = document.getElementById("second-main");
-                                                            //           secondMain.style.minHeight = `calc(100vh - ${firstMainHeight}px)`;
-                                                            //       });
-              
+            
+            document.addEventListener("DOMContentLoaded", function() {
+                    var firstMainHeight = document.getElementById("first-main").offsetHeight;
+                    var banner1Height = document.getElementById("banner-1").offsetHeight;
+                    var banner2Height = document.getElementById("banner-2").offsetHeight;
+                    
+                    var secondMain = document.getElementById("second-main");
+                    secondMain.style.minHeight = `calc(100vh - ${firstMainHeight + banner1Height + banner2Height}px)`;
+                });
+            
+            
                                                               function openPopUp(value) {
                                                                   let elmInput = document.getElementById("sharable-url");
                                                                   let elmDialog = document.getElementById("pop-up-for-sharing");
@@ -530,11 +527,10 @@
                                                                   setTimeout(copySharableURL, 0);
                                                               }
                                                   
-                      
-                                                            function loadNextPage() {
+                                                              function loadNextPage() {
                                                                 window.location.href = 'page1.html';
                                                             }
-      
+                      
                                         
                                                       
                                                               function closeDialog() {

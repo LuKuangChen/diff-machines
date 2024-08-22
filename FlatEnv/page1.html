@@ -504,7 +504,7 @@
                                                                           <div id="root">
                                       <menu aria-label="toolbar" id="nav-trace" style="display: flex; align-items: center; justify-content: center; position: sticky; top: 0; margin: 0 auto; background: linear-gradient(to right, transparent 0, transparent 210px, white 200px); padding: 10px; box-sizing: border-box; width: 100%; z-index: 100000;">
                                 <li style="margin-right: 10px;">
-                                    <button onclick="loadPrevPage()" style="font-size: 16px; padding: 8px 16px;"><span aria-hidden="true">⏮ </span>Previous</button>
+                                    <button disabled="" style="font-size: 16px; padding: 8px 16px;"><span aria-hidden="true">⏮ </span>Previous</button>
                                 </li>
                                 <li>
                                     <button onclick="loadNextPage()" style="font-size: 16px; padding: 8px 16px;"><span aria-hidden="true">⏭ </span>Next</button>
@@ -559,12 +559,9 @@ end</code><br></details></li></ol></section><section id="stdout"><hr><span>(No o
                                                                   
                                       
                                                                             function loadNextPage() {
-                                                                                window.location.href = 'page3.html';
+                                                                                window.location.href = 'page2.html';
                                                                             }
-        
-                                                                            function loadPrevPage() {
-                                                                                window.location.href = 'page1.html';
-                                                                            }
+
                       
                                                                       
                                                                               function closeDialog() {
